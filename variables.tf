@@ -104,6 +104,7 @@ variable "maintenance_policy" {
 
 variable "kubeconfig_path" {
   type        = string
+  sensitive   = true
   default     = "./kubeconfig"
   description = "The path to save the kubeconfig to"
 }
